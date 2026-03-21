@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <nav className="fixed flex align-center justify-center items-center hover:scale-[1.1] transition-transform">
-            <h1 className="font-heading text-4xl hover:text-amber-300 transition-colors">kg</h1>
+            <h1 className="font-heading text-4xl hover:text-amber-300 hover:scale-[1.1] transition-colors">kg</h1>
             <div className="font-body flex gap-6 text-xl">
                 {navLinks.map((link) => (
                     <a key = {link.name}
