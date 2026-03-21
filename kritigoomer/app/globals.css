@@ -46,10 +46,6 @@ nav:hover {
   transition-duration: 0.3s;
 }
 
-nav:hover:dark {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
-}
-
 button {
   display: flex;
   width: fit-content;
