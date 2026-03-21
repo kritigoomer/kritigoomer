@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #451919;
-    --foreground: #ededed;
+    --background: #967bae;
+    --foreground: white;
   }
 }
 
@@ -26,10 +26,10 @@ body {
 }
 
 nav {
-  padding: 16px;
+  padding: 8px 32px;
   gap: 16px;
   margin-top: 32px;
-  border-radius: 25px;
+  border-radius: 48px;
   background-color: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.2);
   box-shadow: 0 8px 32px rgba(0,0,0,0.3);

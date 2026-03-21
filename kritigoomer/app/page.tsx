@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex items-center flex-col">
       <Navbar/>
-      <HeroCard className=""/>
+      <HeroCard/>
     </main>
   );
 }

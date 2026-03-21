@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="font-body flex gap-6 text-xl">
                 {navLinks.map((link) => (
                     <a key = {link.name}
-                    href={link.link} className="hover:text-violet-400">
+                    href={link.link} className="dark:hover:text-violet-400 hover:text-violet-900">
                         <text>{link.name}</text>
                     </a>
 
