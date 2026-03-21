@@ -1,0 +1,11 @@
+<svg style="display: none;">
+  <filter id="glass-distortion">
+    <!-- feTurbulence generates the noise pattern for distortion -->
+    <feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="1" seed="5" result="turbulence" />
+    <!-- feGaussianBlur softens the noise -->
+    <feGaussianBlur in="turbulence" stdDeviation="2" result="softTurbulence" />
+    <!-- feDisplacementMap warps the background (SourceGraphic) using the noise map -->
+    <feDisplacementMap in="SourceGraphic" in2="softTurbulence" scale="20" xChannelSelector="R" yChannelSelector="G" result="displacement" />
+    <!-- Additional filters can be added for reflection/specular highlights -->
+  </filter>
+</svg>
