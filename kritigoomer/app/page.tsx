@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar"
+import HeroCard from "../components/HeroCard"
 
 export default function Home() {
   return (
     <main className="flex items-center flex-col">
       <Navbar/>
-      <h1>Hello</h1>
+      <HeroCard/>
     </main>
   );
 }

@@ -12,9 +12,9 @@
   --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
+    --background: #451919;
     --foreground: #ededed;
   }
 }
@@ -23,4 +23,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
+}
+
+button {
+  display: flex;
+  width: fit-content;
+  padding: 0 16 4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25;
+  background: rgba(255,255,255,0.1);
+  font-size: larger;
 }
