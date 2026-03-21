@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Comforter_Brush, Playfair_Display} from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const comforterBrush = Comforter_Brush({
+  variable: "--font-heading",
+  weight: ['400'],
+  subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const playfair = Playfair_Display({
+  variable: "--font-body",
+  weight: ['400'],
+  subsets: ['latin'],
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +28,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${comforterBrush.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className={`${playfair.variable} min-h-full flex flex-col`}>{children}</body>
     </html>
   );
 }
