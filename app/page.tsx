@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import Navbar from "../components/Navbar"
 import HeroCard from "../components/HeroCard"
 import Footer from "../components/Footer"
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar/>
       <HeroCard/>
       <Footer/>
+      <Analytics/>
     </main>
   );
 }
