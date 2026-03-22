@@ -36,9 +36,9 @@ export default function HeroCard() {
                 hover:bg-white/5 hover:scale-[1.025] hover:shadow-2xl hover:shadow-black/20 
                 hover:backdrop-blur-2xl hover: hover:outline-1 hover:outline-white/20"
       >
-        <div className="flex aspect-square h-full rounded-xl outline-2 dark:outline-violet-300/50 outline-white/50">
+        <div className="flex aspect-square h-50 md:h-full rounded-xl outline-2 dark:outline-violet-300/50 outline-white/50">
           <img
-            className="h-50 md:h-full object-cover rounded-xl"
+            className="h-50 md:h-full rounded-xl"
             src="/KritiGoomer_Headshot.jpg"
             alt="Kriti Goomer"
           />
