@@ -10,19 +10,24 @@ export default function SongCard() {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
-    useEffect(() => {
-        audioRef.current = new Audio(song.songUrl);
-    }, []);
+    // useEffect(() => {
+    //     audioRef.current = new Audio(song.songUrl);
+    // }, []);
 
     const togglePlayPause = () => {
-        if (!audioRef.current) return;
+        try {
+            if (!audioRef.current) return;
 
-        if (isPlaying) {
-            audioRef.current.pause();
-        } else {
-            audioRef.current.play();
+            if (isPlaying) {
+                audioRef.current.pause();
+            } else {
+                audioRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
+        } catch (error) {
+            console.error("Playback failed: ", error);
         }
-        setIsPlaying(!isPlaying);
+        
     }
 
     return (
@@ -30,6 +35,7 @@ export default function SongCard() {
                         opacity-85 outline-[1px] outline-white/30 
                         text-shadow-black/50 text-shadow-xs
                         backdrop-blur-2xl bg-white/10">
+            <audio ref={audioRef} src={song.songUrl} preload="metadata" />
             <div className="aspect-square w-10">
                 <img src="/song.webp" className="w-full rounded-xs"/>
             </div>
