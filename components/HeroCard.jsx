@@ -38,7 +38,7 @@ export default function HeroCard() {
       >
         <div className="flex aspect-square h-full rounded-xl outline-2 dark:outline-violet-300/50 outline-white/50">
           <img
-            className="h-full object-cover rounded-xl"
+            className="h-50 md:h-full object-cover rounded-xl"
             src="/KritiGoomer_Headshot.jpg"
             alt="Kriti Goomer"
           />
