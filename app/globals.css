@@ -33,15 +33,14 @@ nav {
   background-color: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.2);
   z-index: 1000;
-
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: white;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 nav:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   transition-duration: 0.3s;
 }
 
