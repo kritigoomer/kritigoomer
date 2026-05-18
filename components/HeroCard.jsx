@@ -27,6 +27,7 @@ export default function HeroCard() {
     },
   ];
   const resume = { link: "/resume.pdf" };
+  
   return (
     <div className="flex items-center justify-center h-screen">
       <div
