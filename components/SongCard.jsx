@@ -44,7 +44,8 @@ export default function SongCard() {
                 <h2 className="font-body text-xs">{song.singer}</h2>
                 <div className="mt-1 w-full bg-gray-300 rounded-full h-0.5">
                     <div id="progress-bar-fill"
-                        className="w-0 bg-indigo-500 h-0.5 rounded-full transition-all duration-100 ease-linear"
+                        className="w-0 bg-indigo-500 h-0.5 rounded-full transition-all 
+                                    duration-100 ease-linear"
                     ></div>
                 </div>
             </div>
